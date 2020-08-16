@@ -8,6 +8,7 @@ Linting CLI for JP Engineers.
   - [Run](#run)
   - [Lint](#lint)
   - [Test](#test)
+  - [Build](#build)
   - [Distribute](#distribute)
   - [Down](#down)
 - [Miscellaneous](#miscellaneous)
@@ -44,6 +45,12 @@ docker-compose exec app gofmt -w .
 
 ```shell
 docker-compose exec app go test -v -cover
+```
+
+### Build
+
+```shell
+docker-compose exec app go build -v
 ```
 
 ### Distribute
