@@ -42,7 +42,9 @@ docker-compose exec app gofmt -w .
 
 ### Test
 
-(T. B. D.)
+```shell
+docker-compose exec app go test -v -cover
+```
 
 ### Distribute
 
