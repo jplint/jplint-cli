@@ -23,7 +23,7 @@ run:
 build:	bin/$(NAME)
 
 bin/$(NAME):	$(SRCS)
-	go build -a -tags netgo -installsuffix netgo $(LDFLAGS) -o $@
+	go build -a -tags netgo -installsuffix netgo $(LDFLAGS) -o $@ .
 
 test:
 	go test -v -cover

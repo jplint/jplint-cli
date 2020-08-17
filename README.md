@@ -68,7 +68,7 @@ docker-compose exec cli make build
 #### Install
 
 ```shell
-docker-compose exec cli make clean
+docker-compose exec cli make install
 ```
 
 #### Distribute
