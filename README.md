@@ -1,5 +1,8 @@
 # jplint-cli
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/jplint/jplint-cli)](https://goreportcard.com/report/github.com/jplint/jplint-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Linting CLI for JP Engineers.
 
 - [Dependencies](#dependencies)
@@ -16,7 +19,6 @@ Linting CLI for JP Engineers.
     - [Clean](#clean)
     - [`docker-compose down`](#docker-compose-down)
 - [Miscellaneous](#miscellaneous)
-  - [License](#license)
   - [Contributor](#contributor)
 
 ## Dependencies
@@ -88,10 +90,6 @@ docker-compose down --rmi all --volumes
 ```
 
 ## Miscellaneous
-
-### License
-
-MIT License
 
 ### Contributor
 
