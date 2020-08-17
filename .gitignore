@@ -91,6 +91,9 @@ $RECYCLE.BIN/
 *.so
 *.dylib
 
+# Built binaries
+bin/*
+
 # Test binary, built with `go test -c`
 *.test
 

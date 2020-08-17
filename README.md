@@ -5,12 +5,16 @@ Linting CLI for JP Engineers.
 - [Dependencies](#dependencies)
 - [How to](#how-to)
   - [Develop](#develop)
-  - [Run](#run)
-  - [Lint](#lint)
-  - [Test](#test)
-  - [Build](#build)
-  - [Distribute](#distribute)
-  - [Down](#down)
+    - [`docker-compose up`](#docker-compose-up)
+    - [Run](#run)
+    - [Format ( `gofmt` )](#format--gofmt-)
+    - [Static Analysis ( `vet` )](#static-analysis--vet-)
+    - [Test](#test)
+    - [Build](#build)
+    - [Install](#install)
+    - [Distribute](#distribute)
+    - [Clean](#clean)
+    - [`docker-compose down`](#docker-compose-down)
 - [Miscellaneous](#miscellaneous)
   - [License](#license)
   - [Contributor](#contributor)
@@ -25,42 +29,62 @@ Linting CLI for JP Engineers.
 
 ### Develop
 
-```shell
-docker-compose up --detach --build
-```
-
-### Run
+#### `docker-compose up`
 
 ```shell
-docker-compose exec app go run main.go
+docker-compose up --detach --build  # prezto: dkcU --build
 ```
 
-### Lint
+#### Run
 
 ```shell
-docker-compose exec app gofmt -w .
+docker-compose exec cli make run  # prezto: dkce cli make run
 ```
 
-### Test
+#### Format ( `gofmt` )
 
 ```shell
-docker-compose exec app go test -v -cover
+docker-compose exec cli make fmt
 ```
 
-### Build
+#### Static Analysis ( `vet` )
 
 ```shell
-docker-compose exec app go build -v
+docker-compose exec cli make vet
 ```
 
-### Distribute
+#### Test
+
+```shell
+docker-compose exec cli make test
+```
+
+#### Build
+
+```shell
+docker-compose exec cli make build
+```
+
+#### Install
+
+```shell
+docker-compose exec cli make clean
+```
+
+#### Distribute
 
 (T. B. D.)
 
-### Down
+#### Clean
 
 ```shell
-docker-compose down --rmi all
+docker-compose exec cli make clean
+```
+
+#### `docker-compose down`
+
+```shell
+docker-compose down --rmi all --volumes
 ```
 
 ## Miscellaneous
